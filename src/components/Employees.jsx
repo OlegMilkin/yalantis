@@ -4,6 +4,7 @@ import { getEmployees, restoreFromStorage } from '../redux/reducers/employees'
 import EmployeesList from './EmployeesList'
 import EmployeesBirthday from './EmployeesBirthday'
 import Loader from './common/Loader'
+import classes from '../index.module.css'
 
 const Employees = () => {
   const dispatch = useDispatch()
@@ -28,7 +29,7 @@ const Employees = () => {
   }
 
   return (
-    <div className='employees'>
+    <div className={classes.employees}>
       <EmployeesList />
       <EmployeesBirthday />
     </div>

@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux'
+import classes from '../index.module.css'
 
 const MonthSection = ({ monthName }) => {
   const employeesList = useSelector((state) => state.employees.employeesList)
@@ -8,7 +9,7 @@ const MonthSection = ({ monthName }) => {
     .sort((a, b) => a.lastName.localeCompare(b.lastName))
 
   return (
-    <div className='monthSection'>
+    <div className={classes.employees__monthRow}>
       <strong>{monthName}</strong>
       {filteredList.length ? (
         filteredList.map((item) => (

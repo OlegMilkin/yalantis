@@ -1,12 +1,14 @@
+import classes from "./Loader.module.css";
+
 const Loader = () => {
   return (
-    <div className='lds-ring'>
+    <div className={classes.ldsRing}>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
     </div>
-  )
-}
+  );
+};
 
-export default Loader
+export default Loader;

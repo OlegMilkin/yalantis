@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { setToLocalStorage } from '../redux/reducers/employees'
 import { setAsActive } from '../redux/reducers/employees'
 import { setAsInActive } from '../redux/reducers/employees'
+import classes from '../index.module.css'
 
 const RadioButtons = ({ id, isActive }) => {
   const dispatch = useDispatch()
@@ -16,7 +17,7 @@ const RadioButtons = ({ id, isActive }) => {
   },[isActive, dispatch])
 
   return (
-    <div>
+    <div className={classes.employees__rowItem}>
       <label>
         <input
           type='radio'

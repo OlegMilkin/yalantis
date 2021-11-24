@@ -1,4 +1,5 @@
 import Employee from './Employee'
+import classes from '../index.module.css'
 
 const EmployeesList = () => {
   const alphabet = [
@@ -31,8 +32,8 @@ const EmployeesList = () => {
   ]
 
   return (
-    <div className='employees__list'>
-      <h2 style={{ width: '100%' }}>Employees</h2>
+    <div className={classes.employees__list}>
+      <h2 className={classes.employees__headline}>Employees</h2>
       {alphabet.map((alphabetLetter) => (
         <Employee alphabetLetter={alphabetLetter} key={alphabetLetter} />
       ))}

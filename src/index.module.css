@@ -1,0 +1,105 @@
+.employees {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.employees__headline {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.employees__list {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.employees__item {
+  width: 22%;
+  border: 1px solid #ccc;
+  margin: 0 10px 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px #ccc;
+}
+
+.employees__subHeadline {
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  padding: 0 0 5px 0;
+  margin: 0 0 5px 0;
+}
+
+.employees__row {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 7px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.employees__row:last-child {
+  border-bottom: none;
+}
+
+.employees__rowItem {
+  padding: 2px 0 0 0;
+}
+
+.employees__rowItem label {
+  font-style: italic;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.employees__rowItem input {
+  margin: 0 5px 0 0;
+}
+
+.employees__rowEmpty {
+  margin: 30px 0 0 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.employees__rowEmpty img {
+  width: 50px;
+  margin: 10px 0 0 0;
+}
+
+.employees__birthday {
+  width: 20%;
+  position: fixed;
+  right: 12%;
+
+}
+
+.employees__monthRow {
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #ccc;
+  padding: 0 0 5px 0;
+}
+
+.employees__monthRow strong {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.employees__monthRow div {
+  font-size: 15px;
+}
+
+.active {
+  color: blue;
+}
+
+
