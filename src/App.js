@@ -5,9 +5,6 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/yalantis'>
-          <Redirect to='/yalantis/employees' />
-        </Route>
         <Route path='/yalantis/employees' component={Employees} />
         <Route path='*'>
           <div>404 Not Found</div>
