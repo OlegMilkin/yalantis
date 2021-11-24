@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/yalantis/static/css/main.433168a3.chunk.css",
-    "main.js": "/yalantis/static/js/main.3932d302.chunk.js",
-    "main.js.map": "/yalantis/static/js/main.3932d302.chunk.js.map",
+    "main.css": "/yalantis/static/css/main.0aed6c56.chunk.css",
+    "main.js": "/yalantis/static/js/main.a3f12305.chunk.js",
+    "main.js.map": "/yalantis/static/js/main.a3f12305.chunk.js.map",
     "runtime-main.js": "/yalantis/static/js/runtime-main.4d496cd6.js",
     "runtime-main.js.map": "/yalantis/static/js/runtime-main.4d496cd6.js.map",
-    "static/js/2.3eb8c4b8.chunk.js": "/yalantis/static/js/2.3eb8c4b8.chunk.js",
-    "static/js/2.3eb8c4b8.chunk.js.map": "/yalantis/static/js/2.3eb8c4b8.chunk.js.map",
+    "static/js/2.bea00a02.chunk.js": "/yalantis/static/js/2.bea00a02.chunk.js",
+    "static/js/2.bea00a02.chunk.js.map": "/yalantis/static/js/2.bea00a02.chunk.js.map",
     "index.html": "/yalantis/index.html",
-    "static/css/main.433168a3.chunk.css.map": "/yalantis/static/css/main.433168a3.chunk.css.map",
-    "static/js/2.3eb8c4b8.chunk.js.LICENSE.txt": "/yalantis/static/js/2.3eb8c4b8.chunk.js.LICENSE.txt"
+    "static/css/main.0aed6c56.chunk.css.map": "/yalantis/static/css/main.0aed6c56.chunk.css.map",
+    "static/js/2.bea00a02.chunk.js.LICENSE.txt": "/yalantis/static/js/2.bea00a02.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4d496cd6.js",
-    "static/js/2.3eb8c4b8.chunk.js",
-    "static/css/main.433168a3.chunk.css",
-    "static/js/main.3932d302.chunk.js"
+    "static/js/2.bea00a02.chunk.js",
+    "static/css/main.0aed6c56.chunk.css",
+    "static/js/main.a3f12305.chunk.js"
   ]
 }
