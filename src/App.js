@@ -9,9 +9,6 @@ function App() {
           <Redirect to='/employees' />
         </Route>
         <Route path='/employees' component={Employees} />
-        <Route path='*'>
-          <div>404 Not Found</div>
-        </Route>
       </Switch>
     </Router>
   )
