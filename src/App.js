@@ -5,7 +5,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path='/yalantis'>
+        <Route path='/yalantis'>
           <Redirect to='/yalantis/employees' />
         </Route>
         <Route path='/yalantis/employees' component={Employees} />
