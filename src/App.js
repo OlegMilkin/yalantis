@@ -5,10 +5,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path='https://olegmilkin.github.io/yalantis/'>
-          <Redirect to='https://olegmilkin.github.io/yalantis/employees/employees' />
+        <Route exact path={process.env.PUBLIC_URL + '/'}>
+          <Redirect to={process.env.PUBLIC_URL + '/employees'} />
         </Route>
-        <Route path='https://olegmilkin.github.io/yalantis/employees' component={Employees} />
+        <Route path={process.env.PUBLIC_URL + '/employees'} component={Employees} />
       </Switch>
     </Router>
   )
