@@ -10,7 +10,7 @@ ReactDOM.render(
   <Provider store={store}>
     <HashRouter>
       <App />
-    </HashRouter>  
+    </HashRouter>
   </Provider>,
   document.getElementById('root')
 )
