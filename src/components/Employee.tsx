@@ -1,9 +1,14 @@
 import EmployeeItem from './EmployeeItem'
-import { useSelector } from 'react-redux'
 import classes from '../index.module.css'
+import {useTypedSelector} from "../hooks/useTypedSelector";
 
-const Employee = ({ alphabetLetter }) => {
-  const employeesList = useSelector((state) => state.employees.employeesList)
+interface EmployeeProps {
+  alphabetLetter: string
+}
+
+const Employee = ({ alphabetLetter } : EmployeeProps) => {
+
+  const {employeesList} = useTypedSelector(state => state.employees.employeesList)
 
   let filteredList = employeesList
     .filter((item) => item.firstName[0].toLowerCase() === alphabetLetter)
