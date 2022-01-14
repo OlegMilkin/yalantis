@@ -1,6 +1,8 @@
 import getFullMonthName from './getFullMonthName'
+import {IEmployee, IEmployeeWithActiveState} from "../types";
 
-const modifyEmployeesData = (data) => (
+
+const modifyEmployeesData = (data: IEmployee[]): IEmployeeWithActiveState[]  => (
   data.map((item) => ({
     ...item,
     dob: getFullMonthName(item.dob),

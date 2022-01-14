@@ -1,9 +1,12 @@
+import {FC} from 'react'
 import { useSelector } from 'react-redux'
 import MonthSection from './MonthSection'
 import classes from '../index.module.css'
+import {month} from '../types'
+import {AppStateType} from '../types'
 
-const EmployeesBirthday = () => {
-  const month = [
+const EmployeesBirthday: FC = () => {
+  const month: month= [
     'november',
     'january',
     'february',
@@ -17,8 +20,8 @@ const EmployeesBirthday = () => {
     'october',
   ]
 
-  const employeesList = useSelector((state) => state.employees.employeesList)
-  const isActiveIncludes = employeesList.some((item) => item.isActive === true)
+  const employeesList = useSelector((state: AppStateType) => state.employees.employeesList)
+  const isActiveIncludes = employeesList.some((item) => item.isActive)
 
   return (
     <div className={classes.employees__birthday}>

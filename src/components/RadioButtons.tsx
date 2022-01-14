@@ -1,3 +1,4 @@
+import React, {FC} from 'react';
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { setToLocalStorage } from '../redux/reducers/employees'
@@ -5,7 +6,12 @@ import { setAsActive } from '../redux/reducers/employees'
 import { setAsInActive } from '../redux/reducers/employees'
 import classes from '../index.module.css'
 
-const RadioButtons = ({ id, isActive }) => {
+interface RadioButtonsProps {
+    id: string;
+    isActive: boolean;
+}
+
+const RadioButtons: FC<RadioButtonsProps> = ({ id, isActive }) => {
   const dispatch = useDispatch()
 
   const setActive = () => dispatch(setAsActive(id))
@@ -22,7 +28,7 @@ const RadioButtons = ({ id, isActive }) => {
         <input
           type='radio'
           name={id}
-          checked={isActive === true}
+          checked={isActive}
           onChange={() => {
             setActive()
           }}
@@ -34,7 +40,7 @@ const RadioButtons = ({ id, isActive }) => {
         <input
           type='radio'
           name={id}
-          checked={isActive === false}
+          checked={!isActive}
           onChange={() => {
             setInActive()
           }}

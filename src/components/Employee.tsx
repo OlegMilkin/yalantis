@@ -1,9 +1,15 @@
 import EmployeeItem from './EmployeeItem'
 import { useSelector } from 'react-redux'
 import classes from '../index.module.css'
+import {FC} from "react";
+import {AppStateType} from "../types";
 
-const Employee = ({ alphabetLetter }) => {
-  const employeesList = useSelector((state) => state.employees.employeesList)
+interface EmployeeProp {
+  alphabetLetter: string
+}
+
+const Employee: FC<EmployeeProp> = ({ alphabetLetter }) => {
+  const employeesList = useSelector((state:AppStateType) => state.employees.employeesList)
 
   let filteredList = employeesList
     .filter((item) => item.firstName[0].toLowerCase() === alphabetLetter)
@@ -15,7 +21,12 @@ const Employee = ({ alphabetLetter }) => {
       {filteredList.length ? (
         filteredList.map((item) => (
           <div className={classes.employees__row} key={item.id}>
-            <EmployeeItem {...item} />
+            <EmployeeItem
+              firstName={item.firstName}
+              lastName={item.lastName}
+              id={item.id}
+              isActive={item.isActive}
+            />
           </div>
         ))
       ) : (

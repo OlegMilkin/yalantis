@@ -1,8 +1,10 @@
+import {FC} from 'react'
 import Employee from './Employee'
 import classes from '../index.module.css'
+import {alphabet} from '../types'
 
-const EmployeesList = () => {
-  const alphabet = [
+const EmployeesList: FC = () => {
+  const alphabet: alphabet = [
     'a',
     'b',
     'c',
